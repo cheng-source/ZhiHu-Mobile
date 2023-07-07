@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REM练习</title>
+</head>
+<style>
+    html {
+        font-size: 100px;
+    }
+    
+    .box {
+        width: 3.28rem;
+        height: 1.64rem;
+        line-height: 1.64rem;
+        text-align: center;
+        font-size: .4rem;
+        background-color: lightblue;
+    }
+</style>
+<script>
+    (function() {
+        const computed = () => {
+            let html = document.documentElement,
+                deviceW = html.clientWidth,
+                designW = 750;
+            let ratio = deviceW * 100 / designW;
+            html.style.fontSize = ratio + 'px';
+        }
+
+        computed();
+        window.addEventListener('resize', computed);
+    })();
+</script>
+
+<body>
+    <div class="box">
+        rem
+    </div>
+</body>
+
+</html>
