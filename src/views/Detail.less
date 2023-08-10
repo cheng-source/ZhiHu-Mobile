@@ -1,0 +1,80 @@
+.detail-box {
+
+  .content {
+    overflow-x: hidden;
+    margin: 0;
+    padding-bottom: 100px;
+    .img-place-holder {
+      overflow: hidden;
+      img{
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    .meta {
+      .avatar {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+
+
+  .tab-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DDD;
+    .back {
+      width: 90px;
+      height: 100%;
+      text-align: center;
+      line-height: 100px;
+      font-size: 40px;
+    }
+    .icons {
+      display: flex;
+      // height: 100%;
+      height: 50px;
+      justify-content: space-around;
+      flex-grow: 1;
+
+      .adm-badge-wrapper,
+      span {
+        text-align: center;
+        font-size: 40px;
+        flex-grow: 1;
+      }
+
+      span {
+        &:nth-last-of-type(1) {
+          color: #AAA;
+        }
+
+        &:nth-of-type(1) {
+          &.stored {
+            color: yellow;
+          }
+        }
+      }
+
+      .adm-badge-fixed {
+        background: none ;
+        right: 30%;
+        .adm-badge-content {
+          font-size: 30px;
+          color: #000
+        }
+      }
+    }
+  }
+}

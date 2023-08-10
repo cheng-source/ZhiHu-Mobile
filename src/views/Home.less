@@ -1,0 +1,98 @@
+.home-box {
+
+  // 轮播图样式
+  .swiper-box {
+    box-sizing: border-box;
+    width: 750px;
+    height: 750px;
+    background-color:#DDD;
+
+    .adm-swiper {
+      height: 100%;
+
+      a {
+        display: block;
+        height: 100%;
+      }
+      .adm-image,
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        .adm-image-tip {
+          svg {
+            width: 20%;
+            height: 20%;
+          }
+
+        }
+      }
+
+      .desc {
+        position: absolute;
+        color: #fff;
+        bottom: 40px;
+        width: 100%;
+        padding-left: 30px;
+        .title {
+          font-size: 36px;
+          color: #fff
+        }
+
+        .author {
+          line-height: 60px;
+          font-size: 24px;
+          color: rgba(255, 255, 255, .7)
+        }
+      }
+
+      .adm-swiper-indicator {
+        bottom: 20px;
+        left: auto;
+        right: 0;
+        transform: translate(-30px);
+      }
+
+      .adm-page-indicator-dot {
+        margin: 0 6px;
+        width: 12px;
+        height: 12px;
+        background: rgba(255, 255, 255, .7);
+        border-radius: 6px;
+        &.adm-page-indicator-dot-active {
+          width: 36px;
+          background: #fff;
+        }
+      }
+
+      
+    }
+  }
+
+
+  // 新闻盒子样式
+  .news-box {
+    padding: 5px 25px;
+
+
+    .adm-divider-horizontal::before {
+      max-width: 2%;
+    }
+
+  }
+
+
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+    font-size: 26px;
+    .adm-dot-loading {
+      font-size: 40px;
+    }
+  }
+ 
+}
