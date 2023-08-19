@@ -1,11 +1,18 @@
-const initial = {
+import _ from '../../assets/utils';
+import * as TYPES from '../action-type';
 
+const initial = {
+    info: null
 }
 
 const baseReducer = function(state = initial, action) {
-    state = {...state };
+    state = _.clone(state);
     switch (action.type) {
-        default: break;
+        case TYPES.BASE_INFO:
+            state.info = action.info;
+            break;
+        default:
+            break;
     }
     return state;
 }
