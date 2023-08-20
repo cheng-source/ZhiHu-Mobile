@@ -113,7 +113,6 @@ const Login = function(props) {
     }
   }
 
-
   return <div className="login-box">
          <NavBarAgain title={'登录'} />
           <Form 

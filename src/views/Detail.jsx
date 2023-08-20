@@ -11,7 +11,7 @@ import api from "../api/index";
 
 const Detail = function(props) {
   let {navigate, params} = props;
-  console.log(props);
+  
   
   let [info, setInfo] = useState(null),
       [extra, setExtra] = useState(null);
@@ -164,7 +164,8 @@ const Detail = function(props) {
         <Badge content='5'><MessageOutline /></Badge>
         <Badge content='5'><LikeOutline /></Badge>
         <span className={isStore ? 'stored' : ''} onClick={handleStore}><StarOutline /></span>
-        <span><SendOutline /></span>
+
+        <span><StarOutline /></span>
       </div>
 
     </div>

@@ -65,7 +65,7 @@ const Home = function() {
           return <Swiper.Item key={id}>
           <Link to={{
             pathname: `/detail/${id}`
-          }}>
+          }}> 
               <Image lazy src={image} />
               <div className="desc">
                 <h3 className="title">{title}</h3>
